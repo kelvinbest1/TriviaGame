@@ -1,5 +1,5 @@
 //constants
-const triviaData ={}
+const triviaData =[{}]
 
 //state variables
 let score;
