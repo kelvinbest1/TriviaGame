@@ -68,5 +68,15 @@ function deselectAnswers() {
     answerElements.forEach(answerEl =>{
         answerEl.checked = false
     })
+    function getSelected() {
+    let answer
+    answerElements.forEach(answerEl => {
+if (answerEl.checked) {
+    answer = answerEl.id
+}
+    
+    })
+
+    }
  }
  function clickHandle(){}
