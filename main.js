@@ -42,7 +42,7 @@ const submitButton = document.getElementById("submit")
 
 
 // event listeners
-//submitButton.addEventListener('click',move)
+submitButton.addEventListener('click',clickHandle)
 
 //intialize state variables
 function intialize(){
@@ -52,8 +52,10 @@ function intialize(){
 }
 // functions
 intialize()
-
 function render(){
+    setQuestion()
+}
+function setQuestion(){
     deselectAnswers()
     const currentTriviaData = triviaData[quizCurrent]
     questionElement.innerHTML = currentTriviaData.question
@@ -67,3 +69,4 @@ function deselectAnswers() {
         answerEl.checked = false
     })
  }
+ function clickHandle(){}
