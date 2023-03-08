@@ -26,13 +26,13 @@ correct: "b",}
 ]
 
 //state variables
-let score = 0;
-let quizCurrent = 0;
+let score =0
+let quizCurrent =0
 
 
 // cached elements
 const quiz = document.getElementById("quiz")
-const answerElements = document.getElementById(".answer")
+const answerElements = document.querySelectorAll(".answer")
 const questionElement = document.getElementById("question")
 const a_text = document.getElementById("a_text")
 const b_text = document.getElementById("b_text")
@@ -42,7 +42,7 @@ const submitButton = document.getElementById("submit")
 
 
 // event listeners
-submitButton.addEventListener('click',move)
+//submitButton.addEventListener('click',move)
 
 //intialize state variables
 function intialize(){
@@ -57,11 +57,13 @@ function render(){
     deselectAnswers()
     const currentTriviaData = triviaData[quizCurrent]
     questionElement.innerHTML = currentTriviaData.question
-    a_text.innerHTML = currentTriviaData.a
-    b_text.innerHTML = currentTriviaData.b
-    c_text.innerHTML = currentTriviaData.c
-    d_text.innerHTML = currentTriviaData.d
+    a_text.textContent = currentTriviaData.a
+    b_text.textContent = currentTriviaData.b
+    c_text.textContent = currentTriviaData.c
+    d_text.textContent = currentTriviaData.d
 }
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+    answerElements.forEach(answerEl =>{
+        answerEl.checked = false
+    })
  }
