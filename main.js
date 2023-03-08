@@ -17,6 +17,12 @@ b: "basketball",
 c: "soccer",
 d: "hockey",
 correct: "c",},
+{question: "Which golf tournament did Tiger Woods win by 12 strokes cementing his first-ever major championship win?",
+a: "The Chicken",
+b: "The Master",
+c: "The Finals",
+d: "The Derby",
+correct: "b",}
 ]
 
 //state variables
@@ -34,3 +40,4 @@ const d_text = document.getElementById("d_text")
 const submitButton = document.getElementById("submit")
 
 // event listeners
+submitButton.addEventListener('click')
