@@ -26,8 +26,8 @@ correct: "b",}
 ]
 
 //state variables
-let score;
-let quizCurrent;
+let score = 0;
+let quizCurrent = 0;
 
 
 // cached elements
@@ -55,7 +55,7 @@ function render(){
     const currentTriviaData = triviaData[quizCurrent]
     questionElement.innerHTML = currentTriviaData.question
     a_text.innerHTML = currentTriviaData.a
-    b_text.innerHTML
-    c_text.innerHTML
-    d_text.innerHTML
+    b_text.innerHTML = currentTriviaData.b
+    c_text.innerHTML = currentTriviaData.c
+    d_text.innerHTML = currentTriviaData.d
 }
