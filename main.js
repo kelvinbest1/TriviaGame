@@ -50,3 +50,12 @@ function intialize(){
 }
 // functions
 intialize()
+
+function render(){
+    const currentTriviaData = triviaData[quizCurrent]
+    questionElement.innerHTML = currentTriviaData.question
+    a_text.innerHTML = currentTriviaData.a
+    b_text.innerHTML
+    c_text.innerHTML
+    d_text.innerHTML
+}
