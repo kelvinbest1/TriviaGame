@@ -52,6 +52,7 @@ function intialize(){
 intialize()
 
 function render(){
+    deselectAnswers()
     const currentTriviaData = triviaData[quizCurrent]
     questionElement.innerHTML = currentTriviaData.question
     a_text.innerHTML = currentTriviaData.a
@@ -59,3 +60,6 @@ function render(){
     c_text.innerHTML = currentTriviaData.c
     d_text.innerHTML = currentTriviaData.d
 }
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+ }
