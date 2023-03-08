@@ -40,7 +40,7 @@ const d_text = document.getElementById("d_text")
 const submitButton = document.getElementById("submit")
 
 // event listeners
-submitButton.addEventListener('click')
+submitButton.addEventListener('click',move)
 
 //intialize state variables
 function intialize(){
