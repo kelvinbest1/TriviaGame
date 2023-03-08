@@ -26,8 +26,8 @@ correct: "b",}
 ]
 
 //state variables
-let score =0
-let quizCurrent =0
+let score = 0
+let quizCurrent = 0
 
 
 // cached elements
@@ -58,7 +58,7 @@ function render(){
 function setQuestion(){
     deselectAnswers()
     const currentTriviaData = triviaData[quizCurrent]
-    questionElement.innerHTML = currentTriviaData.question
+    questionElement.textContent = currentTriviaData.question
     a_text.textContent = currentTriviaData.a
     b_text.textContent = currentTriviaData.b
     c_text.textContent = currentTriviaData.c
@@ -68,15 +68,15 @@ function deselectAnswers() {
     answerElements.forEach(answerEl =>{
         answerEl.checked = false
     })
+}
     function getSelected() {
     let answer
     answerElements.forEach(answerEl => {
 if (answerEl.checked) {
     answer = answerEl.id
 }
-    
-    })
-
-    }
- }
+})
+return answer
+}
+ 
  function clickHandle(){}
