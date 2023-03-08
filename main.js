@@ -41,3 +41,12 @@ const submitButton = document.getElementById("submit")
 
 // event listeners
 submitButton.addEventListener('click')
+
+//intialize state variables
+function intialize(){
+    let score = 0
+    let quizCurrent = 0
+    render()
+}
+// functions
+intialize()
