@@ -90,13 +90,18 @@ function changeQuestion(){
     if(answer){
         if(answer===triviaData[quizCurrent].correct){
             score++
-            msg.innerHTML = "Correct"
+            msg.innerText = "Correct"
         }
         quizCurrent++
     }
     if(quizCurrent < triviaData.length){
-       changeQuestion
+       changeQuestion()
     }
+    else{
+        quiz.innerHTML = `<h2>You've answered ${score}/${triviaData.lenth} questions correctly</h2>`
+    }
+
+
 }
 
 

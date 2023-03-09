@@ -1,6 +1,8 @@
 body {
     display:flex ;
     background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
 }
 
 ul{
