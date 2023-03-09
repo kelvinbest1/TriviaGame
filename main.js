@@ -90,7 +90,7 @@ function changeQuestion(){
     if(answer){
         if(answer===triviaData[quizCurrent].correct){
             score++
-            msg.innerText = "Correct"
+            //msg.innerText = "Correct"
         }
         quizCurrent++
     }
@@ -98,11 +98,23 @@ function changeQuestion(){
        changeQuestion()
     }
     else{
-        quiz.innerHTML = `<h2>You've answered ${score}/${triviaData.lenth} questions correctly</h2>`
+        quiz.innerHTML = `<h2>You've answered ${score}/${triviaData.length} questions correctly</h2>`
     }
 
+    function rendermsg(){
+        const question = getSelected()
+        if(question===triviaData[quizCurrent].correct){
+            msg.innerText = "Correct"
+        }
+        
+        else {
+            msg.innerText = "Incorrect"
+        }
+    }
+    rendermsg()
 
 }
+    
 
 
  
