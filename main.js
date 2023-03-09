@@ -46,8 +46,8 @@ submitButton.addEventListener('click',clickHandle)
 
 //intialize state variables
 function intialize(){
-    let score = 0
-    let quizCurrent = 0
+     score = 0
+     quizCurrent = 0
     render()
 }
 // functions
@@ -79,6 +79,6 @@ if (answerEl.checked) {
 return answer
 }
  
- function clickHandle()
+ function clickHandle(){}
 
  
