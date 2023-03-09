@@ -98,22 +98,13 @@ function changeQuestion(){
        changeQuestion()
     }
     else{
-        quiz.innerHTML = `<h2>You've answered ${score}/${triviaData.length} questions correctly</h2>`
+        quiz.innerHTML = `<h2>You've answered ${score}/${triviaData.length} questions correctly</h2>
+                          <button onclick="location.reload()">Play Again</button>`
     }
-
-    function rendermsg(){
-        const question = getSelected()
-        if(question===triviaData[quizCurrent].correct){
-            msg.innerText = "Correct"
-        }
-        
-        else {
-            msg.innerText = "Incorrect"
-        }
-    }
-    rendermsg()
-
 }
+
+    
+
     
 
 
