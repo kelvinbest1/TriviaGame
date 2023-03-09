@@ -6,7 +6,8 @@ body {
     display: flex;
     overflow: hidden;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', serif;
+    height: 100vh;
 }
 
 ul{
