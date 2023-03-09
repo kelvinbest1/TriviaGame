@@ -1,5 +1,6 @@
 //constants
-const triviaData =[{question:"What's the diameter of a basketball hoop in inches?",
+const triviaData =[
+{question:"What's the diameter of a basketball hoop in inches?",
 a: "34 inches",
 b: "23 inches",
 c: "22 inches",
@@ -39,7 +40,7 @@ const b_text = document.getElementById("b_text")
 const c_text = document.getElementById("c_text")
 const d_text = document.getElementById("d_text")
 const submitButton = document.getElementById("submit")
-
+const msg = document.getElementById("message")
 
 // event listeners
 submitButton.addEventListener('click',clickHandle)
@@ -55,6 +56,7 @@ intialize()
 function render(){
     setQuestion()
 }
+
 function setQuestion(){
     deselectAnswers()
     const currentTriviaData = triviaData[quizCurrent]
@@ -69,16 +71,25 @@ function deselectAnswers() {
         answerEl.checked = false
     })
 }
-    function getSelected() {
+function getSelected() {
     let answer
     answerElements.forEach(answerEl => {
-if (answerEl.checked) {
+    if (answerEl.checked) {
     answer = answerEl.id
 }
 })
-return answer
+    return answer
 }
  
- function clickHandle(){}
+ function clickHandle(){
+    const answer = getSelected()
+    if(answer){
+        if(answer===triviaData[quizCurrent].correct){
+            score++
+            msg.innerHTML = "Correct"
+        }
+        quizCurrent++
+    }
+ }
 
  
