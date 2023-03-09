@@ -26,8 +26,8 @@ correct: "b",}
 ]
 
 //state variables
-let score = 0
-let quizCurrent = 0
+let score 
+let quizCurrent 
 
 
 // cached elements
@@ -79,4 +79,6 @@ if (answerEl.checked) {
 return answer
 }
  
- function clickHandle(){}
+ function clickHandle()
+
+ 
