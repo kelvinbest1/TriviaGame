@@ -80,6 +80,10 @@ function getSelected() {
 })
     return answer
 }
+
+function changeQuestion(){
+    setQuestion()
+}
  
  function clickHandle(){
     const answer = getSelected()
@@ -90,6 +94,10 @@ function getSelected() {
         }
         quizCurrent++
     }
- }
+    if(quizCurrent < triviaData.length){
+       changeQuestion
+    }
+}
+
 
  
