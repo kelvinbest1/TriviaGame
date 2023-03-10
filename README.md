@@ -4,7 +4,7 @@ This a quick trivia game that consists of multiple choice questions about sports
 # Game Images
 
 
-
+Screen Shot 2023-03-10 at 10.41.17 AM.png
 
 
 
@@ -13,3 +13,6 @@ This a quick trivia game that consists of multiple choice questions about sports
 JavaScript, CSS, HTML
 
 # Getting Started
+The link is provided for you, so that you can get started playing.  https://kelvinbest1.github.io/TriviaGame/ , this is link from github that deploys the game. Just click and play.
+
+# Next Steps
