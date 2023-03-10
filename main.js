@@ -23,7 +23,14 @@ a: "The Chicken",
 b: "The Master",
 c: "The Finals",
 d: "The Derby",
-correct: "b",}
+correct: "b",},
+{question: "The Triple Crown award is given to a horse that wins which three races?",
+a: "The Kentucky Derby, Preakness Stakes, and Belmont Stakes.",
+b:"Coca Cola 600, Dixie Vodka 400, Daytona 500",
+c:"Premier Series., Touring Pro Division, Velocity Tour.",
+d:"Justice League, Adventures, Marvel Studios",
+
+},
 ]
 
 //state variables
@@ -102,6 +109,9 @@ function changeQuestion(){
                           <button onclick="location.reload()">Play Again</button>`
     }
 }
+
+
+
 
     
 
