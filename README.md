@@ -3,6 +3,10 @@ This a quick trivia game that consists of multiple choice questions about sports
 
 # Game Images
 
+<<<<<<< HEAD
+=======
+<img width="836" alt="Screen Shot 2023-03-12 at 9 04 33 AM" src="https://user-images.githubusercontent.com/60621382/224546516-e4c7510f-9aba-4a7c-b519-e620c8f1d3a1.png">
+>>>>>>> 7f2e2bb576f669d33b333de78234bf1343fe03b0
 
 
 
