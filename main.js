@@ -29,7 +29,7 @@ a: "The Kentucky Derby, Preakness Stakes, and Belmont Stakes.",
 b:"Coca Cola 600, Dixie Vodka 400, Daytona 500",
 c:"Premier Series., Touring Pro Division, Velocity Tour.",
 d:"Justice League, Adventures, Marvel Studios",
-
+correct: "a",
 },
 ]
 
@@ -97,7 +97,6 @@ function changeQuestion(){
     if(answer){
         if(answer===triviaData[quizCurrent].correct){
             score++
-            //msg.innerText = "Correct"
         }
         quizCurrent++
     }
@@ -109,7 +108,7 @@ function changeQuestion(){
                           <button onclick="location.reload()">Play Again</button>`
     }
 }
-
+           
 
 
 
