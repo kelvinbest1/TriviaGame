@@ -3,7 +3,7 @@ This a quick trivia game that consists of multiple choice questions about sports
 
 # Game Images
 
-/Users/kelvinlanier/sei/TriviaGame/Screen Shot 2023-03-10 at 10.41.17 AM.png
+
 
 
 
